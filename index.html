@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>QR Generator</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <form onsubmit="handleSubmit(event)">
+            
+            <!-- Label added -->
+            <label for="inptxt">Enter text or URL:</label><br>
+
+            <!-- Placeholder added -->
+            <input id="inptxt" 
+                   type="text" 
+                   placeholder="Type something to generate QR"
+                   autocomplete="off">
+            <br>
+
+            <label for="format">Choose format:</label>
+            
+            <select id="format">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="jpg">JPG</option>
+            </select>
+            <br>
+
+            <button type="submit">
+                Generate QR
+            </button>
+        </form>
+
+        <div class="img-div">
+            <img id="qrimg" alt="Generated QR Code will appear here" />
+            <!-- Download button -->
+            <a id="downloadBtn" download="qrcode.png">Download QR</a>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
