@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Container */
+.container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 25px;
+    background: #f3f3f3;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Form */
+form {
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+label[for="format"] {
+    display: block;
+    margin-top: 15px;   /* 👈 adds space above "Choose format" */
+}
+
+#format {
+    margin-top: 8px;
+}
+
+/* Generate Button */
+form button {
+    width: 100%;
+    margin-top: 15px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background: #2bbe60;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #249e50;
+}
+
+/* QR Section */
+.img-div {
+    margin-top: 20px;
+    text-align: center;   /* ✅ centers QR */
+}
+
+#qrimg {
+    display: block;
+    margin: 15px auto;   /* ✅ centers image */
+    width: 200px;
+}
+
+/* Download Button Container */
+/* Download Button Container (center it properly) */
+.img-div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Download Button */
+#downloadBtn {
+    display: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Remove link default styles */
+#downloadBtn:link,
+#downloadBtn:visited,
+#downloadBtn:hover,
+#downloadBtn:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hover */
+#downloadBtn:hover {
+    background: #222;
+}
+
+#format {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 5px;
+}
